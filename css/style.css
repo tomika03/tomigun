@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,700;1,300&family=Open+Sans:wght@400;700&display=swap');
+
+.nav-links-animation::before{
+    content: "";
+    bottom:0;
+    left:0;
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    background-color: rgb(255, 255, 255);
+    transition: 0.5s;
+}
+        .nav-links-animation:hover{
+            color: rgb(46, 0, 0);
+            }
+            .nav-links-animation:hover:before{
+                width: 100%;
+                }
+
+.navbar-brand {
+    font-family: 'Bebas Neue', cursive;
+}
+
+.navbar-font-custom-links {
+    font-family: 'Montserrat', sans-serif !important;
+}
+    .navbar-font-custom-links:hover {
+        color: grey;
+        transition: 0,2s;  
+    }
+
+.custom-carousel {
+    height: 60vh;
+    background-position: center;
+    background-size: cover;
+    
+}
+#carousel-img-1 {background-image: url(https://www.vinterier.ru/pictures/shop/krasivyiy-peiyzag-kartina-maslom-40x30.JPG);}
+#carousel-img-2 {background-image: url(https://papik.pro/uploads/posts/2021-09/1631895769_6-papik-pro-p-malenkie-risunki-peizazhi-6.jpg);}
+#carousel-img-3 {background-image: url(https://artworld.ru/images/cms/content/catalog2/kartina_v_interier_pejzazh_maslom_v_lesnoj_tishi_ki200106.jpg);}
+#carousel-img-4 {background-image: url(https://images.shafastatic.net/145114982);}
+body {
+    scroll-behavior:smooth;
+    background-color: black !important;
+}

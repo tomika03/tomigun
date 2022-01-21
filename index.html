@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid container">
+          <a class="navbar-brand py-0 nav-links-animation" href="#">Navbar</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+            <ul class="navbar-nav  mb-2 mb-lg-0 navbar-font-custom-links">
+              <li class="nav-item me-5">
+                <a class="nav-link active nav-links-animation" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item me-5">
+                <a class="nav-link active nav-links-animation" href="#">Link</a>
+              </li>
+              <li class="nav-item me-5">
+                <a class="nav-link active nav-links-animation" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">Offcanvas</a>
+              </li>
+              <!-- <li class="nav-item dropdown me-md-3 active">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Меню
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Горячие блюда</a></li>
+                  <li><a class="dropdown-item" href="#">Напитки</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Десерты</a></li>
+                </ul>
+              </li> -->
+              
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+    <!-- carousel -->
+    <div id="carouselExampleIndicators" class="carousel carousel-dark slide container-fluid g-0" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="custom-carousel container-fluid" id="carousel-img-1"></div>
+          </div>
+          <div class="carousel-item">
+            <div class="custom-carousel container-fluid" id="carousel-img-2"></div>
+          </div>
+          <div class="carousel-item">
+            <div class="custom-carousel container-fluid" id="carousel-img-3"></div>
+          </div>
+          <div class="carousel-item">
+            <div class="custom-carousel container-fluid" id="carousel-img-4"></div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    <!-- about -->
+      <div class="container">
+        <!-- <a class="btn btn-primary" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+            Link with href
+          </a>
+          <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+            Button with data-bs-target
+          </button> -->
+          
+          <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5>
+              <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <div>
+
+                
+                    <button class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                      Открыть
+                    </button>
+                  <div class="collapse" id="collapseExample">
+                    <button class="me-1 btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSecondary" aria-expanded="false" aria-controls="collapseExample">
+                        Открыть2
+                      </button>
+                      <div class="collapse card card-body" id="collapseSecondary">
+                        Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
+                      </div>
+                    <div class="card card-body">
+                      Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
+                    </div>
+                  </div>
+                  
+                </div>
+              <div class="dropdown mt-3">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown">
+                  Dropdown button
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+      </div>
+    <!-- galery -->
+        <div class="container-fluid p-lg-5 py-5 g-0 row bg-light d-flex align-self-sm-center justify-content-center">
+
+            <div class="col-6 g-0 shadow p-lg-5">
+              <div class="shadow-lg" style="background-position: center; height: 50vh;" id="carousel-img-4"></div>
+            </div>
+
+            <div class="col container bg-white p-5 shadow-lg">          
+              <h1 class="p-3 pb-0">Диво</h1>
+              <p class="p-3 lh-md">Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit accusamus non tenetur, eius repellat, provident error quaerat aliquam exercitationem ipsam enim, debitis nesciunt iusto temporibus illum sunt? Adipisci, et incidunt consectetur id eos quos eligendi vel ipsa repellendus reiciendis doloribus dolor labore dolore deleniti reprehenderit velit hic! Sapiente maiores, ipsam dolore voluptas explicabo tenetur deserunt illum vel officiis, veniam amet rerum voluptate blanditiis fuga dolorum, qui aliquam impedit necessitatibus odit perferendis ut id adipisci nobis. Iure doloremque tempora laborum soluta odit excepturi qui ut quas maiores atque corporis voluptates, natus hic maxime temporibus quia et amet aut blanditiis aliquam in.</p>
+            </div>
+
+        </div>
+        <div class="container-fluid p-lg-5 py-5 g-0 row bg-light d-flex align-self-sm-center justify-content-center">
+
+        <div class="col container bg-white p-5  shadow-lg">          
+            <h1 class="p-3 pb-0">Диво</h1>
+            <p class="p-3 lh-md">Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit accusamus non tenetur, eius repellat, provident error quaerat aliquam exercitationem ipsam enim, debitis nesciunt iusto temporibus illum sunt? Adipisci, et incidunt consectetur id eos quos eligendi vel ipsa repellendus reiciendis doloribus dolor labore dolore deleniti reprehenderit velit hic! Sapiente maiores, ipsam dolore voluptas explicabo tenetur deserunt illum vel officiis, veniam amet rerum voluptate blanditiis fuga dolorum, qui aliquam impedit necessitatibus odit perferendis ut id adipisci nobis. Iure doloremque tempora laborum soluta odit excepturi qui ut quas maiores atque corporis voluptates, natus hic maxime temporibus quia et amet aut blanditiis aliquam in.</p>
+          </div>
+        
+            <div class="col-6 g-0 shadow p-lg-5">
+              <div class="shadow-lg" style="background-position: center; height: 50vh;" id="carousel-img-4"></div>
+            </div>
+
+        </div>
+    <!-- contact us -->
+
+    <!-- footer -->
+    <footer class="bg-dark align-self-sm-center p-5 text-warning">
+        <div class="row justify-content-sm-between">
+            <div class="col">
+                <h4>Contacts</h4>
+                <p>Phone number: +0(123) 56-78-90</p>
+                <p>Phone number: +0(123) 56-78-90</p>
+                <p>Phone number: +0(123) 56-78-90</p>
+                <p>Phone number: +0(123) 56-78-90</p>
+                <p>Email: example@example.com</p>
+            </div>
+            <div class="col">
+                <h4>Contacts</h4>
+                <p>Phone number: +0(123) 56-78-90</p>
+                <p>Phone number: +0(123) 56-78-90</p>
+                <p>Phone number: +0(123) 56-78-90</p>
+                <p>Phone number: +0(123) 56-78-90</p>
+                <p>Email: example@example.com</p>
+            </div>
+            <div class="col">
+                
+            </div>
+            <div class="col">
+                <div class="">
+                    
+                </div>
+            </div>
+            <!-- <div class="col"></div> -->
+        </div>
+
+    </footer>
+    <script src="script/bootstrap.bundle.min.js"></script>
+</body>
+</html>
